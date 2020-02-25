@@ -1,11 +1,17 @@
 package metier;
 
+import java.security.KeyStore;
 import java.util.*;
 
 public class PyRat {
+    
+    HashSet<Point> hash_point;
 
     /* Méthode appelée une seule fois permettant d'effectuer des traitements "lourds" afin d'augmenter la performace de la méthode turn. */
     public void preprocessing(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
+        hash_point = new HashSet<Point>();
+        hash_point.addAll(fromages);
+
     }
 
     /* Méthode de test appelant les différentes fonctionnalités à développer.
@@ -14,8 +20,8 @@ public class PyRat {
         @param position - Point contenant la position actuelle du joueur
         @param fromages - List<Point> contenant la liste de tous les Points contenant un fromage. */
     public void turn(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
-        Point pt1 = new Point(2,1);
-        Point pt2 = new Point(3,1);
+        Point pt1 = new Point(2, 1);
+        Point pt2 = new Point(3, 1);
         System.out.println((fromageIci(pt1) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
         System.out.println((fromageIci_EnOrdreConstant(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
         System.out.println((passagePossible(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
@@ -25,19 +31,22 @@ public class PyRat {
 
     /* Regarde dans la liste des fromages s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
-    private boolean fromageIci(Point pos) {
-        return false;
+    private boolean fromageIci(Point pos, List<Point> fromages) {
+        return fromages.contains(pos);
     }
 
     /* Regarde de manière performante (accès en ordre constant) s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci_EnOrdreConstant(Point pos) {
-        return false;
+        return hash_point.contains(pos);
     }
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».
         @return true s'il y a un passage depuis  « de » vers « a ». */
-    private boolean passagePossible(Point de, Point a) {
+    private boolean passagePossible(Point de, Point a, Map<Point, List<Point>> laby) {
+        if(laby.containsKey(de)){
+            return laby.get(de).contains(a);
+        }
         return false;
     }
 
