@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="avancement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
     </list>
@@ -112,6 +110,14 @@
       <workItem from="1579190378689" duration="95000" />
       <workItem from="1579190584833" duration="16000" />
     </task>
+    <task id="LOCAL-00001" summary="avancement">
+      <created>1582645644023</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582645644023</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -120,11 +126,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="avancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancement" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="365" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582645141939">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="365" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1368.872@0.0.1368.872" timestamp="1582645141938" />
+    <state x="312" y="38" key="CommitChangelistDialog2" timestamp="1582645642606">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="312" y="38" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1582645642606" />
+    <state x="277" y="170" key="Vcs.Push.Dialog.v2" timestamp="1582645646965">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="170" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1582645646965" />
   </component>
   <component name="masterDetails">
     <states>
